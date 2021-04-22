@@ -10,47 +10,75 @@
   display: block;
 }
 
-@media only screen and (min-width:390px) and (max-width: 699) {
+@media only screen and (min-width:375px) and (max-height: 850px)
+ and (orientation: portrait) {
 
   footer #abh li {
-    margin-left: 0.5rem;
-    margin-right: 0.075rem;
-    word-spacing: 0.0009rem;
+    margin-left: 0.25rem;
+    margin-right: 0.050rem;
+    word-spacing: 0.09rem;
   }
 
   footer #stp li {
-    margin-right: 0.5rem;
-    margin-left: 0.075rem;
+    margin-right: 0.25rem;
+    margin-left: 0.050rem;
+
   }
 
   footer #abh a,
   footer #stp a {
-    font-size: 14px;
+    font-size: 0.87rem;
   }
 }
 
 
-@media only screen and (min-width: 600px) and (min-height: 800px) {
+@media only screen and (min-width: 600px) and (min-height: 800px) 
+and (orientation: landscape) {
   :root {
-    font-size: 20px;
+    font-size: 30px;
+  }
+  footer #abh li {
+    margin-left: 1em;
+    margin-right: 0.7em;
+    word-spacing: 0.3rem;
+    margin-top: 0.5rem;
+  }
+
+  footer #stp li {
+    margin-right: 1em;
+    margin-left: 0.7em;
+    margin-top: 0.5rem;
+
+  }
+
+  footer #abh a,
+  footer #stp a {
+    font-size: 10.8rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (min-height: 800px) 
+and (orientation: portrait) {
+  :root {
+    font-size: 18px;
   }
 
 
 
   footer #abh li {
-    margin-left: 1em;
-    margin-right: 1.3em;
-    word-spacing: 0.3rem;
+    margin-left: 1.0em;
+    margin-right: 1.2em;
+    word-spacing: 0.1rem;
   }
 
   footer #stp li {
-    margin-right: 1em;
-    margin-left: 1.3em;
+    margin-right: 1.0em;
+    margin-left: 1.2em;
   }
 
   footer #abh a,
   footer #stp a {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 }
 
@@ -74,7 +102,7 @@
 
   footer #abh a,
   footer #stp a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -114,11 +142,12 @@ i {
   border-color: none;
   border-radius: 50%;
   padding: 0.7rem;
-  margin-top: -0.75rem
+  margin-top: -0.75rem;
 }
 
 i:hover {
   background-color: rgb(233, 237, 241);
+
 }
 
 header button:hover {
@@ -148,7 +177,7 @@ main #div-middle {
 
 #google-thumbnail {
   display: block;
-  width: 14rem;
+  width: 12rem;
   height: auto;
   margin-top: 35vh;
   margin-left: auto;
@@ -162,8 +191,8 @@ main #div-middle {
 
 #search-bar {
   display: block;
-  width: 15rem;
-  height: 2rem;
+  width: 13rem;
+  height: 1.7rem;
   margin: 0.5rem;
   margin-bottom: 1rem;
   margin-left: auto;
@@ -199,7 +228,7 @@ div #query {
   border-top-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  font-size: inherit;
+  font-size: 0.8rem;
 }
 
 #ifl-btn {
@@ -214,7 +243,7 @@ div #query {
   border-top-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  font-size: inherit;
+  font-size: 0.8rem;
 
 
 }
@@ -226,17 +255,25 @@ div #query {
 
 #lang {
   display: flex;
-  font-size: 0.1rem;
-  width: 20em;
-  margin-top: -1em;
+  font-size: 0.08rem;
+  width: 18em;
+  margin-top: 0em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
   justify-content: center;
   font-size: inherit;
-
 }
-
+#lang a {
+   text-decoration: none;
+   color: blue;
+}
+#lang a:hover {
+  text-decoration: underline;
+}
+#lang a:visited {
+   color: blueviolet;
+}
 
 #fottie {
   background-color: rgb(241, 241, 241);
@@ -275,13 +312,11 @@ div #query {
   display: flex;
   float: left;
   text-align: center;
-  font-size: 0.7em;
-  margin-left: 0.35em;
-  margin-right: 0.075em;
-  word-spacing: 0.0009rem;
+  font-size: 0.7rem;
+  margin-left: 0.40em;
+  margin-right: 0.080em;
   word-wrap: break-word;
-  margin-top: 4%;
-  margin-bottom: 2%;
+  margin-top: 0.70em;
 
 
 }
@@ -291,10 +326,9 @@ div #query {
   display: flex;
   text-align: center;
   font-size: 0.7rem;
-  margin-right: 0.35em;
-  margin-left: 0.075em;
-  margin-top: 5.5%;
-  margin-bottom: 2%;
+  margin-right: 0.40em;
+  margin-left: 0.080em;
+  margin-top: 0.70em;
 
 }
 
@@ -303,7 +337,7 @@ div #query {
   color: black;
   text-decoration: none;
 
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 #abh a:hover,
