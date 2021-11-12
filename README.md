@@ -1,1 +1,1 @@
-In this project I create a replica of google.com homepage using vanilla javascript and vanilla css.
+In this project I created a replica of google.com homepage using vanilla javascript and vanilla css.
