@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title></title>
+        <link>undefined</link>
+        <description>undefined</description>
+        <lastBuildDate>Sat, 14 Oct 2023 10:59:08 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[141023SaturdayReact]]></title>
+            <guid>5b0899a8c12f48439473625498e74994</guid>
+            <pubDate>Sat, 14 Oct 2023 08:39:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h2 id="css-units">css units :</h2>
+<ul>
+<li><mark>em</mark> - relative to font size of parent element</li>
+<li><mark>rem</mark> - relative to font size of root <code>html</code> element<br />
+<a title="css button generator" href="https://css3buttongenerator.com/">Checkout this website to generate a css button :<br />
+https://css3buttongenerator.com/</a></li>
+</ul>
+<h1 id="bootstrap">Bootstrap</h1>
+<ul>
+<li>footer, header , nav ,buttons , forms need to be created for use</li>
+<li>Is a Framework to the decrease boilerplate code</li>
+<li>Installation in 3 ways
+<ul>
+<li>CDN</li>
+<li>Local download</li>
+<li>NPM</li>
+</ul>
+</li>
+<li><strong>Boilerplate</strong></li>
+</ul>
+<div><pre class="hljs"><code><span class="hljs-meta">&lt;!doctype <span class="hljs-keyword">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Bootstrap demo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"</span>
+                    <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
+                    <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"</span>
+                    <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./styles/style.css"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, world!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"</span>
+                    <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"</span>
+                    <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div>
+<ul>
+<li>
+<p>Bootstrap h1 to h6, colours normal and subtle variants</p>
+<div><pre class="hljs"><code><span class="hljs-meta">&lt;!doctype <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Bootstrap demo<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"</span>
+            <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
+            <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"</span>
+            <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./styles/style.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h1 bg-primary"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2 bg-danger"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 bg-info"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h4 bg-secondary"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h5 bg-success"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h6 bg-warning"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-1 bg-success-subtle"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-2 bg-warning-subtle"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-3 bg-secondary-subtle"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-4 bg-primary-subtle"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-5 bg-danger-subtle"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-6 bg-info-subtle"</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisic<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>click<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"</span>
+            <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"</span>
+            <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div>
+</li>
+</ul>
+<p><img src="/_resources/7310e6847d8a479bb786e856799d7a9e.png" /></p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>
